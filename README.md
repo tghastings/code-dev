@@ -42,15 +42,15 @@ This repository contains Dockerfile of code IDE running on Ubuntu for Docker's a
 
 Download automated build from public Docker Hub Registry:
 
-    docker pull tghastings/code-esaas
+    docker pull tghastings/code-dev
 
 # Step 3: Running
 
-    docker run -d -p 80:80 -p 3000:3000 tghastings/code-esaas
+    docker run -d -p 80:80 -p 1337:1337 tghastings/code-dev
 
 You can mount a directory as a volume with the argument \*-v /your-path/directory/:/root/ like this :
 
-    docker run -d -p 80:80 -p 3000:3000 -v /your-path/local/working/directory/:/root/environment tghastings/code-esaas
+    docker run -d -p 80:80 -p 1337:1337 -v /your-path/local/working/directory/:/root/environment tghastings/code-dev
 
 # Step 4: Accessing Code
 
